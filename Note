@@ -1,0 +1,22 @@
+1)Create a new Project in Android.
+2)Create MainActivity.java class.
+3)Add activity_main.xml in your res/layout folder.
+4)Add Billing services and permission in Manifest.xml.
+
+                   Do's
+1)Create sign apk for your application.
+2)Upload your apk on Google play store.
+3)Create product for your application.
+4)wait for 6-12 hour for update item's on store.
+5)Copy Key of your Google account and paste it into BillingSecurity.java class Line number 135-
+String base64EncodedPublicKey = "PUT YOUR PUBLIC KEY HERE";
+6)Give Billing permissions in Manifest.xml
+7)Add IMarketBillingService.java in com.android.vending.billing package.
+
+                   Don't
+1)Don't use emulator for testing its does not support Billing Services.
+2)Don't use unsigned apk for Billing services.
+3)Don't share your key with any one.
+
+Read more: http://www.androidhub4you.com/2013/03/how-to-inegrate-in-app-purchase-billing.html#ixzz3EiEoVSs6
+
